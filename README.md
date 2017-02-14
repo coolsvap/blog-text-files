@@ -1,2 +1,2 @@
 # blog-text-files
-text files for blogs published at blog.coolsvap.net
+text files for blogs published at `My blog <http://blog.coolsvap.net/>`__
