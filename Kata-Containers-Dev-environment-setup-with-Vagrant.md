@@ -16,7 +16,9 @@ vagrant plugin install &lt;plugin-name&gt;
 
 The setup instructions are simple, once you have installed the prereqs, clone the repo
 
+```
 git clone https://github.com/coolsvap/vagrant-kata-dev
+```
 
 Edit the Vagrantfile to update details
 
@@ -25,26 +27,24 @@ Edit the Vagrantfile to update details
 
 Create the vagrant box with following command
 
-vagrant up
+``` vagrant up ```
 
 Once the box is started, login to the box using following command
 
-vagrant ssh
+``` vagrant ssh ```
 
 Switch to root user and move to vagrant shared directory and install the setup script
 
+```
 sudo su
-
 cd /vagrant
-
 ./setup-kata-dev.sh
-
+```
 It will perform the steps required to setup the dev environment. Verify the setup done correctly with following steps,
 
+```
 # docker info | grep Runtime
-
 WARNING: No swap limit support
-
 Runtimes: kata-runtime runc
-
 Default Runtime: runc
+```
